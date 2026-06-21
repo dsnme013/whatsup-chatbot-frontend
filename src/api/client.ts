@@ -2,7 +2,7 @@ import { z } from "zod";
 import type { Doctor, TriageResult } from "../types";
 
 const API_BASE_URL =
-  import.meta.env.VITE_API_BASE_URL?.toString() ?? "http://127.0.0.1:8787";
+  import.meta.env.VITE_API_BASE?.toString() ?? "http://127.0.0.1:8787";
 
 async function http<T>(path: string, init?: RequestInit, schema?: z.ZodType<T>): Promise<T> {
   const res = await fetch(`${API_BASE_URL}${path}`, {
