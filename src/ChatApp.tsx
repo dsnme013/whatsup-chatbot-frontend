@@ -153,6 +153,7 @@ function nameInitials(name: string) {
 type ChatAppProps = {
   onBack?: () => void;
 };
+  const [profilePhase, setProfilePhase] = useState<ProfilePhase>("name");
 
 export default function ChatApp({ onBack }: ChatAppProps) {
   const [sessionId, setSessionId] = useState<string | null>(null);
