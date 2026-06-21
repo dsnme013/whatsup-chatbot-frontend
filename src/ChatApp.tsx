@@ -159,14 +159,14 @@ export default function ChatApp({ onBack }: ChatAppProps) {
   const [step, setStep] = useState<Step>("profile");
   const [messages, setMessages] = useState<Msg[]>([]);
   const [patientName, setPatientName] = useState("");
-  const [patientAge, setPatientAge] = useState<number | null>(null);
-  const [patientGender, setPatientGender] = useState<"male" | "female" | "other" | null>(null);
+  const [_patientAge, setPatientAge] = useState<number | null>(null);
+  const [_patientGender, setPatientGender] = useState<"male" | "female" | "other" | null>(null);
   const [profilePhase, setProfilePhase] = useState<ProfilePhase>("name");
-  const [patientPhone, setPatientPhone] = useState("");
-  const [patientCity, setPatientCity] = useState("");
-  const [patientVillage, setPatientVillage] = useState("");
-  const [patientPincode, setPatientPincode] = useState("");
-  const [patientHouse, setPatientHouse] = useState("");
+  const [_patientPhone, setPatientPhone] = useState("");
+  const [_patientCity, setPatientCity] = useState("");
+  const [_patientVillage, setPatientVillage] = useState("");
+  const [_patientPincode, setPatientPincode] = useState("");
+  const [_patientHouse, setPatientHouse] = useState("");
 
   const [mainSymptom, setMainSymptom] = useState<string>("Fever");
   const [symptomText, setSymptomText] = useState<string>(
